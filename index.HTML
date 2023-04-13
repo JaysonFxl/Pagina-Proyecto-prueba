@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Juegos S.A</title>
+    <link rel="stylesheet" href="Estilo.CSS">
+    <link rel="icon" href="pngegg (1).png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href=""">Inicio</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href=""">Reseñas</a></li>
+            <li><a href=""">Galeria</a></li>
+            <li><a href="#register-section">Registro Usuario</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="text-hero">
+            <h1 class="text-xl">Juegos S.A</h1>
+            <h2 class="text-m">Pagina de informacion de videojuegos</h2>
+        </div>
+    </header>
+    <section class="info" id="info">
+        <div class="container">
+            <h2>Información</h2>
+            <p class="text-info">Tienda de videojuegos y venta de consolas y accesorios en Chile a los precios más convenientes, encuentra aquí tu juego favorito.</p>
+        </div>
+    </section>
+    <section class="register-section" id="register-section">
+        <div>
+            <a href="indexregistro.HTML" target="_blank">
+                <button class="btn-register">Registro usuario</button>
+              </a>              
+        </div>
+    </section>
+    <section>
+        <div id="resena" class="container">
+            <h2>Reseñas</h2>
+            <div class="container-card">
+                <article class="card">
+                    <h3>Usuario Anonimo1</h3>
+                    <p>Buena pagina</p>
+                    <a href="">Leer Más</a>
+                </article>
+                <article class="card">
+                    <h3>Usuario Anonimo2</h3>
+                    <p>Buena pagina</p>
+                    <a href="">Leer Más</a>
+                </article>
+                <article class="card">
+                    <h3>Usuario Anonimo3</h3>
+                    <p>Buena pagina</p>
+                    <a href="">Leer Más</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+           <select id="theme" onchange="switchTheme()">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+           </select>
+        </div>
+    </section>
+    <style>
+        .register-section {
+            margin-top: 50px;
+        }
+    </style>
+</body>
+</html>
