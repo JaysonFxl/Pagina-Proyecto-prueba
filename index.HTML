@@ -8,11 +8,26 @@
     <title>Juegos S.A</title>
     <link rel="stylesheet" href="Estilo.CSS">
     <link rel="icon" href="pngegg (1).png">
+    <link rel="stylesheet" href="EstiloOscuro.CSS" media="(prefers-color-scheme: dark)">
+    <script>
+        function switchTheme() {
+          var theme = document.getElementById("theme").value;
+          var estilo = document.getElementsByTagName("link")[0];
+          
+          if (theme === "dark") {
+            estilo.href = "EstiloOscuro.CSS";
+            document.documentElement.setAttribute("data-theme", "dark");
+          } else {
+            estilo.href = "Estilo.CSS";
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        }
+        </script>        
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href=""">Inicio</a></li>
+            <li><a href="">Inicio</a></li>
             <li><a href="#info">Información</a></li>
             <li><a href=""">Reseñas</a></li>
             <li><a href=""">Galeria</a></li>
